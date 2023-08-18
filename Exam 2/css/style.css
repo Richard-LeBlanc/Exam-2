@@ -1,0 +1,175 @@
+p, a, li, label{
+    color: #e0e0e0;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #e0e0e0;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    margin:0;
+}
+body{
+    margin: 0;
+}
+header{
+    height: 175px;
+    width: 100%;
+    background-color: #125784;
+    display: flex;
+}
+header > div,
+header > div > img{
+    margin: 0;
+    padding: 9px 25px;
+    height: 140px;
+    width: auto;
+}
+.searchCan{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchCan > input{
+    border: 1px solid #0e0e0e;
+    width: 80%;
+}
+header > nav{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > nav > menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > nav > menu > li{
+    margin: 5px 15px;
+}
+header > nav > menu > li > a,
+header > nav > menu >span{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+footer{
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+footer > div,
+footer > div, img{
+    height: 180px;
+    width: auto;
+}
+
+
+
+.Masthead{
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orange{
+    margin: 0;
+    height: 300px;
+    background-color: #f57f17;
+    display: flex;
+}
+
+.orange > div,
+.orange > div > img{
+    height: 100%;
+    width: auto;
+}
+.paragraph{
+    margin: 50px;
+}
+
+.pictures{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.pictures > img{
+    height: auto;
+    Width: 33.33%;
+}
+.comments{
+    background-color: #5e35b1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comments > form{
+    margin: 20px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+input, textarea{
+    width: 100%;
+    margin: 8px;
+    border: 1px solid #0e0e0e;
+}
+.comments > form > div{
+    display: flex;
+    justify-content: start;
+}
+.comments > form > div > input{
+    width: auto;
+}
+
+@media screen and (max-width: 760px)
+{
+    .searchCan{
+        display: none;
+    }    
+    header{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pictures{
+        flex-wrap: wrap;
+    }
+    .pictures > img{
+        width: 50%;
+    }
+    .pictures > img:nth-child(3){
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+        flex-direction: column;
+    }
+    .orange{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .orange > div,
+    .orange > div > img{
+        height: auto;
+        width: 100%;
+    }
+}
